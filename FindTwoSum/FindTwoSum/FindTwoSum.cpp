@@ -4,6 +4,7 @@
 using namespace std;
 
 // No Duplicates
+// No Zeros
 // Only one solution
 
 int FindMax(int A[], int& n)
@@ -26,37 +27,38 @@ void FindTwoSum(int A[], int& target, int& n, int Results[])
 	int NumberNeeded, max, * HT;
 
 	max = FindMax(A, n);
-	if (max != I)
+
+	if (max == I) { return; }
+
+	HT = new int[max + 1]{};
+
+	for (int p = 1; p <= n; p++)
 	{
-		HT = new int[max + 1]{};
+		NumberNeeded = target - A[p];
 
-		for (int p = 1; p <= n; p++)
+		if (HT[NumberNeeded] > 0 && NumberNeeded < max && NumberNeeded > 0)
 		{
-			NumberNeeded = target - A[p];
+			Results[0] = HT[NumberNeeded];
+			Results[1] = p;
 
-			if (HT[NumberNeeded] > 0 && NumberNeeded < max && NumberNeeded > 0)
-			{
-				Results[0] = HT[NumberNeeded];
-				Results[1] = p;
-
-				delete[] HT;
-				return;
-			}
-			else
-			{
-				HT[A[p]] = p;
-			}
+			delete[] HT;
+			return;
 		}
-
-		delete[] HT;
+		else
+		{
+			HT[A[p]] = p;
+		}
 	}
+
+	delete[] HT;
+
 }
 
 int main()
 {
-	int A[2] = {0,5};
-	int n = 1;
-	int target = 5;
+	int A[6] = { 0,1,3,7,4,5 };
+	int n = 5;
+	int target = 10;
 	int Results[2] = { -1,-1 };
 
 	FindTwoSum(A, target, n, Results);
