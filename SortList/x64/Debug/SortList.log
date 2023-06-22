@@ -1,0 +1,6 @@
+﻿  SortList.cpp
+D:\Trivial\VSforfunProjects\CodingChallenges\SortList\SortList.cpp(20,13): error C3861: 'compareAndSwitch': identifier not found
+D:\Trivial\VSforfunProjects\CodingChallenges\SortList\SortList.cpp(36,13): error C3861: 'switchEntries': identifier not found
+D:\Trivial\VSforfunProjects\CodingChallenges\SortList\SortList.cpp(41,13): error C3861: 'switchEntries': identifier not found
+D:\Trivial\VSforfunProjects\CodingChallenges\SortList\SortList.cpp(54,12): error C2374: 'tempName': redefinition; multiple initialization
+D:\Trivial\VSforfunProjects\CodingChallenges\SortList\SortList.cpp(52): message : see declaration of 'tempName'
