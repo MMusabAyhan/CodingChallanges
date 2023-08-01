@@ -1,7 +1,21 @@
 #include <iostream>
 #include <vector>
+#include <math.h>
 
 using std::vector;
+
+bool isPrime(const int& number)
+{
+	const int lastNumberToCheck = sqrt(number);
+
+	for (int i = 2; i <= lastNumberToCheck; i++)
+	{
+		if (number % i == 0)
+			return false;
+	}
+
+	return true;
+}
 
 int SumPrimes(int first, int last)
 {
@@ -11,20 +25,8 @@ int SumPrimes(int first, int last)
 	{
 		if (i == 1) { continue; }
 
-		bool bPrime{ true };
-		for (int j = 2; j < i; j++)
-		{
-			if (i % j == 0)
-			{
-				bPrime = false;
-				break;
-			}
-		}
-
-		if (bPrime)
-		{
+		if (isPrime(i))
 			sum += i;
-		}
 	}
 
 	return sum;
@@ -32,6 +34,6 @@ int SumPrimes(int first, int last)
 
 int main()
 {
-	std::cout << SumPrimes(1,100);
+	std::cout << SumPrimes(5, 17);
 }
 
