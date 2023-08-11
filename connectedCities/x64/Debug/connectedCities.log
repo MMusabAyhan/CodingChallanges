@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\CodeDev\CodingChallanges\connectedCities\Source.cpp(53,68): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  connectedCities.vcxproj -> D:\CodeDev\CodingChallanges\x64\Debug\connectedCities.exe
