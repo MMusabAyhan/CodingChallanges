@@ -24,6 +24,7 @@
     <ProjectGuid>{e3091da4-ed02-44ab-9065-3fab3e1bf070}</ProjectGuid>
     <RootNamespace>connectedCities</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ConnectedCities</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
