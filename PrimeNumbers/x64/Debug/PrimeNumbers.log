@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (PrimeNumbersss.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  PrimeNumbers.cpp
+D:\CodeDev\CodingChallanges\PrimeNumbers\PrimeNumbers.cpp(9,36): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\CodeDev\CodingChallanges\PrimeNumbers\PrimeNumbers.cpp(9,30): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+  PrimeNumbers.vcxproj -> D:\CodeDev\CodingChallanges\x64\Debug\PrimeNumbers.exe
