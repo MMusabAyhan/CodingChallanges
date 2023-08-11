@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{e3091da4-ed02-44ab-9065-3fab3e1bf070}</ProjectGuid>
-    <RootNamespace>connectedCities</RootNamespace>
+    <RootNamespace>ConnectedCities</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>ConnectedCities</ProjectName>
   </PropertyGroup>
